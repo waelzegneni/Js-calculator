@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="business-and-finance.png">
+</head>
+
+<body id="body">
+    <h1 class="h1">JS CALCULATOR</h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled="disabled">
+        <div class="row1">
+            <button id="clear" onclick="clearing()">Clear</button>
+        </div>
+
+        <div class="row2">
+            <button value="7" class="grey" onclick="submit(7)">7</button>
+            <button value="8" class="grey" onclick="submit(8)">8</button>
+            <button value="9" class="grey" onclick="submit(9)">9</button>
+            <button value="/" class="jaune" onclick="operateur('/')">/</button>
+        </div>
+
+        <div class="row3">
+            <button value="4" class="grey" onclick="submit(4)">4</button>
+            <button value="5" class="grey" onclick="submit(5)">5</button>
+            <button value="6" class="grey" onclick="submit(6)">6</button>
+            <button value="*" class="jaune" onclick="operateur('*')">*</button>
+        </div>
+
+
+        <div class="row4">
+            <button value="1" class="grey" onclick="submit(1)">1</button>
+            <button value="2" class="grey" onclick="submit(2)">2</button>
+            <button value="3" class="grey" onclick="submit(3)">3</button>
+            <button value="-" class="jaune" onclick="operateur('-')">-</button>
+        </div>
+
+        <div class="row5">
+            <button value="0" class="grey" onclick="submit(0)">0</button>
+            <button value="." class="grey" onclick="submit('.')">.</button>
+            <button value="+" class="jaune" onclick="operateur('+')">+</button>
+            <button value="=" id="equal" onclick="equals()">=</button>
+        </div>
+
+
+
+
+    </div>
+    <h2>Made by WAEL</h2>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
